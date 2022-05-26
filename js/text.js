@@ -9,7 +9,7 @@ var smsTotal1 = 0;
 let Instantiate = textBill();
 
 addBtn2.addEventListener("click", function () {
-    var billTypeEntered = document.querySelector(".billTypeText").value.toLowerCase();
+    var billTypeEntered = document.querySelector(".billTypeText").value.toLowerCase().trim();
     var textTemplate = document.querySelector(".textTemplate").innerHTML;
     var userTextTemplate = Handlebars.compile(textTemplate);
 
