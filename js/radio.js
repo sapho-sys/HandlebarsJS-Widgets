@@ -20,12 +20,12 @@ addBtn.addEventListener("click", function () {
 
     callTotalTwo.innerHTML = userRadioTemplate({ callTotalTwo: Instance.getRadioCall() });
     smsTotalTwo.innerHTML = userRadioTemplate({ smsTotalTwo: Instance.getRadioSms() });
-    totalTwo.innerHTML = userRadioTemplate({ totalTwo: Instance.getTotal() });
+    totalTwo.innerHTML = userRadioTemplate({ totalTwo: Instance.getTotal2() });
 
 
-    totalTwoElement.classList.remove('warning')
-    totalTwoElement.classList.remove('danger')
-    totalTwoElement.classList.add(Instance.totalClass())
+    totalTwo.classList.remove('warning')
+    totalTwo.classList.remove('danger')
+    totalTwo.classList.add(Instance.totalClass())
 
 
 

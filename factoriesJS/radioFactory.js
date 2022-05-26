@@ -19,14 +19,14 @@ function radBill(){
 
    
 
-    function getTotal(){
+    function getTotal2(){
         return (radioCall + radioSms).toFixed(2);
     }
 
     function totalClass(){
-        if(getTotal()>= 50){
+        if(getTotal2()>= 50){
             return "danger"
-        }else if(getTotal()>=30){
+        }else if(getTotal2()>=30){
             return "warning"
         }
     }
@@ -35,7 +35,7 @@ function radBill(){
         radCost,
         getRadioCall,
         getRadioSms,
-        getTotal,
+        getTotal2,
         totalClass
     }
 }
