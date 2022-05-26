@@ -23,9 +23,9 @@ function textBill(){
 
     function totalClass(){
         if(getTotal()>= 30){
-            return "Danger"
+            return "danger"
         }else if(getTotal()>=20){
-            return "Warning"
+            return "warning"
         }
     }
 

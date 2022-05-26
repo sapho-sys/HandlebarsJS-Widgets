@@ -25,9 +25,9 @@ function radBill(){
 
     function totalClass(){
         if(getTotal()>= 50){
-            return "Danger"
+            return "danger"
         }else if(getTotal()>=30){
-            return "Warning"
+            return "warning"
         }
     }
 
