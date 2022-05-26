@@ -23,9 +23,6 @@ addBtn.addEventListener("click", function () {
     totalTwo.innerHTML = userRadioTemplate({ totalTwo: Instance.getTotal() });
 
 
-
-    //color the total based on the criteria
-
     totalTwoElement.classList.remove('warning')
     totalTwoElement.classList.remove('danger')
     totalTwoElement.classList.add(Instance.totalClass())

@@ -26,9 +26,6 @@ addBtn2.addEventListener("click", function () {
     totalOne.classList.remove("warning");
     totalOne.classList.add(Instantiate.totalClass());
 
-
-
-
 })
 
 
