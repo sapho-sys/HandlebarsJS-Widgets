@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <link rel="stylesheet" href="styleIT/skeleton.css">
+    <link rel="stylesheet" href="styleIT/style.css">
+
+
+    <script type="text/x-template" class="textTemplate">
+        {{callTotalOne}}
+        {{smsTotalOne}}
+        {{totalOne}}
+        
+      </script>
+      <script type="text/x-template" class="radioTemplate">
+        {{callTotalTwo}}
+        {{smsTotalTwo}}
+        {{totalTwo}}
+        
+      </script>
+</head>
+
+<body>
+    <div class="container">
+        <!--Text input bill widget-->
+        <div class="six columns box">
+            <h3>Text input bill</h3>
+
+            <div class="">
+                <i>Enter call or sms in the textbox. Update the appropriate total and the global total when the ADD
+                    button in
+                    pressed.</i>
+            </div>
+            <div class="">
+                <i>Calls costs R2.75 and a SMS R0.75</i>
+            </div>
+
+            <div class="">
+                <i>If the total cost exceed R30.00 show the total cost in orange, if over R50 show it in red.</i>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="six columns">
+
+                    <label for="">Bill type</label>
+                    <input type="text" name="" value="" placeholder="enter 'call' or 'sms' " class="billTypeText">
+                    <button class="button-primary addToBillBtn" type="button" name="button">Add</button>
+                </div>
+                <div class="six columns">
+                    <h5>Totals</h5>
+                    <table>
+                        <tr>
+                            <td>Call total</td>
+                            <td>R<span class="callTotalOne">0.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>SMS total</td>
+                            <td>R<span class="smsTotalOne">0.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td class="red">R<span class="totalOne">0.00</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!--Radio button widget-->
+        <div class="row">
+            <div class="six columns box">
+                <h3>Radio button bill</h3>
+
+                <div class="">
+                    Select the call or sms radio button. Update the appropriate total and the global total when the ADD
+                    button in
+                    pressed.
+                </div>
+                <br>
+                <div class="">
+                    <i>Calls costs R2.75 and a SMS R0.75</i>
+                </div>
+
+                <div class="">
+                    <i>If the total cost exceed R30.00 show the total cost in orange, if over R50 show it in red.</i>
+                </div>
+                <br>
+                <div class="">
+                    What is the benefit of using radio buttons?
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="six columns">
+                        <h5>Bill type</h5>
+                        <label class="">
+                            <input type="radio" name="billItemType" class="billItemTypeRadio" value="call">
+                            <span class="label-body">Call</span>
+                        </label>
+                        <label class="">
+                            <input type="radio" name="billItemType" class="billItemTypeRadio" value="sms">
+                            <span class="label-body">SMS</span>
+                        </label>
+                        <button class="button-primary radioBillAddBtn" type="button" name="button">Add</button>
+                    </div>
+                    <div class="six columns">
+                        <h5>Totals</h5>
+                        <table>
+                            <tr>
+                                <td>Call total</td>
+                                <td>R<span class="callTotalTwo">0.00</span></td>
+                            </tr>
+                            <tr>
+                                <td>SMS total</td>
+                                <td>R<span class="smsTotalTwo">0.00</span></td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td class="orange">R<span class="totalTwo">0.00</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <script src="/factoriesJS/textFactory.js" charset="utf8"></script>
+    <script src="js/text.js" charset="utf-8"></script>
+    <script src="/factoriesJS/radioFactory.js" charset="utf8"></script>
+    <script src="js/radio.js" charset="utf-8"></script>
+
+
+
+</body>
+
+</html>
